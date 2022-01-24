@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Pacifico&family=Source+Sans+Pro&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.maincontainer {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Header */
+.menu {
+  position: absolute;
+  width: 100vw;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .logo {
+  padding: 16px;
+}
+
+.menu .logo img {
+  width: 64px;
+  height: 64px;
+}
+
+.menu ul {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+}
+
+.menu ul a {
+  padding: 16px;
+  margin-left: 28px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */

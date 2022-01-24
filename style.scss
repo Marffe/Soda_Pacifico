@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Pacifico&family=Source+Sans+Pro&display=swap');
+$MQPhone1 : 290px;
+$MQPhone2 : 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.maincontainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.menu {
+    position: absolute;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        padding: 16px;
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+    ul {
+        padding: 16px;
+        display: flex;
+        width: 33%;
+        a {
+            padding: 16px;
+            margin-left: 28px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    li {
+        list-style: none;
+    }
+}
