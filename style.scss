@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Pacifico&family=Source+Sans+Pro&display=swap');
-$MQPhone1 : 290px;
-$MQPhone2 : 
+$MQPhone1 : 320px;
+$MQPhone2 : 375px;
+$MQPhone3 : 425px;
+$MQPhone4 : 540px;
+$MQTablet1 : 768px;
+$MQTablet2 : 820px;
+$MQPC_1 : 1024px;
+$MQPC_2 : 1280px; /* Default */
+$MQPC_3 : 1360px;
+$MQPC_4 : 1440px;
+$MQPC_5 : 1600px;
+$MQPC_6 : 1920px;
+$MQPC_7 : 2048px;
+$MQPC_8 : 2560px;
 * {
     margin: 0px;
     padding: 0px;
@@ -21,8 +33,8 @@ $MQPhone2 :
     width: 100vw;
     height: 80px;
     display: flex;
-    justify-content: space-between;
     .logo {
+        width: 20%;
         padding: 16px;
         img {
             width: 64px;
@@ -32,16 +44,155 @@ $MQPhone2 :
     ul {
         padding: 16px;
         display: flex;
-        width: 33%;
+        justify-content: flex-end;
+        width: 80%;
         a {
             padding: 16px;
             margin-left: 28px;
-            font-size: 20px;
+            font-size: 24px;
             text-decoration: none;
             color: black;
         }
     }
     li {
         list-style: none;
+    }
+    @media (min-width: #{$MQPhone1}) and (max-width: #{$MQPhone2 - 1px}) {
+        height: 64px;
+        .logo {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        ul {
+            a {
+                padding: 7px;
+                font-size: 14px;
+            }
+        }
+    }
+    @media (min-width: #{$MQPhone2}) and (max-width: #{$MQPhone3 - 1px}) {
+        height: 64px;
+        .logo {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        
+        ul {
+            a {
+                padding: 7px;
+                font-size: 17px;
+            }
+        }
+    }
+    @media (min-width: #{$MQPhone3}) and (max-width: #{$MQPhone4 - 1px}) {
+        height: 64px;
+        .logo {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        
+        ul {
+            a {
+                padding: 7px;
+                font-size: 19px;
+            }
+        }
+    }
+    @media (min-width: #{$MQPhone4}) and (max-width: #{$MQTablet1 - 1px}) {
+        height: 64px;
+        .logo {
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+        
+        ul {
+            a {
+                padding: 7px;
+                font-size: 20px;
+            }
+        }
+    }
+    @media (min-width: #{$MQTablet1}) and (max-width: #{$MQTablet2 - 1px}) {
+        height: 64px;
+        .logo {
+            img {
+                width: 52px;
+                height: 52px;
+            }
+        }
+        
+        ul {
+            a {
+                padding: 7px;
+                font-size: 22px;
+            }
+        }
+    }
+    @media (min-width: #{$MQTablet2}) and (max-width: #{$MQPC_1 - 1px}) {
+        height: 64px;
+        .logo {
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+        
+        ul {
+            a {
+                padding: 7px;
+                font-size: 22px;
+            }
+        }
+    }
+    @media (min-width: #{$MQPC_5}) and (max-width: #{$MQPC_7 - 1px}) {
+        .logo {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        
+        ul {
+            a {
+                font-size: 28px;
+            }
+        }
+    }
+    @media (min-width: #{$MQPC_8}) {
+        .logo {
+            img {
+                width: 98px;
+                height: 98px;
+            }
+        }
+        
+        ul {
+            a {
+                font-size: 32px;
+            }
+        }
+    }
+    @media (min-width: #{$MQPC_7}) and (max-width: #{$MQPC_8 - 1px}) {
+        .logo {
+            img {
+                width: 144px;
+                height: 144px;
+            }
+        }
+        
+        ul {
+            a {
+                font-size: 56px;
+            }
+        }
     }
 }
