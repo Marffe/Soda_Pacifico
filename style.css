@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Pacifico&family=Source+Sans+Pro&display=swap");
+/* Media Queries */
 /* Default */
+/* General */
 * {
   margin: 0px;
   padding: 0px;
@@ -175,5 +177,29 @@
   .menu ul a {
     font-size: 56px;
   }
+}
+
+/* Main content */
+.action_zone {
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.action_zone .text {
+  width: 47.5%;
+  background-color: red;
+}
+
+.action_zone .soda {
+  width: 47.5%;
+  background-color: blue;
+}
+
+.action_zone .social {
+  width: 5%;
+  background-color: blueviolet;
 }
 /*# sourceMappingURL=style.css.map */
