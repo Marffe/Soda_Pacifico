@@ -220,18 +220,27 @@ $MQPC_8 : 2560px;
     display: flex;
     .text {
         width: 47.5%;
-        background-color: red;
+        background-color: rgb(209, 209, 209);
     }
     .soda {
         width: 47.5%;
-        background-color: blue;
+        background-color: rgb(167, 167, 167);
     }
     .social {
         width: 5%;
-        background-color: blueviolet;
+        background-color: rgb(97, 97, 97);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            width: 54px;
+            height: 54px;
+            list-style: none;
+            margin: 28px 0px 28px 0px;
+        }
     }
     @media (min-width: #{$MQPhone1}) and (max-width: #{$MQPhone2 - 1px}) {
-        flex-direction: column-reverse;
+        flex-direction: column;
         .text {
             height: 47.5%;
             width: auto;
@@ -243,10 +252,19 @@ $MQPC_8 : 2560px;
         .social {
             height: 5%;
             width: auto;
+            flex-direction: row;
+            ul {
+                display: flex;
+            }
+            li {
+                width: 22px;
+                height: 22px;
+                margin: 0px 12px 0px 12px;
+            }
         }
     }
     @media (min-width: #{$MQPhone2}) and (max-width: #{$MQPhone3 - 1px}) {
-        flex-direction: column-reverse;
+        flex-direction: column;
         .text {
             height: 47.5%;
             width: auto;
@@ -258,10 +276,18 @@ $MQPC_8 : 2560px;
         .social {
             height: 5%;
             width: auto;
+            ul {
+                display: flex;
+            }
+            li {
+                width: 22px;
+                height: 22px;
+                margin: 0px 15px 0px 15px;
+            }
         }
     }
     @media (min-width: #{$MQPhone3}) and (max-width: #{$MQPhone4 - 1px}) {
-        flex-direction: column-reverse;
+        flex-direction: column;
         .text {
             height: 47.5%;
             width: auto;
@@ -273,24 +299,71 @@ $MQPC_8 : 2560px;
         .social {
             height: 5%;
             width: auto;
+            ul {
+                display: flex;
+            }
+            li {
+                width: 22px;
+                height: 22px;
+                margin: 0px 15px 0px 15px;
+            }
         }
     }
     @media (min-width: #{$MQPhone4}) and (max-width: #{$MQTablet1 - 1px}) {
 
     }
     @media (min-width: #{$MQTablet1}) and (max-width: #{$MQTablet2 - 1px}) {
-
+        .social {
+            li {
+                width: 26px;
+                height: 26px;
+                margin: 28px 0px 28px 0px;
+            }
+        }
     }
     @media (min-width: #{$MQTablet2}) and (max-width: #{$MQPC_1 - 1px}) {
-
+        .social {
+            li {
+                width: 28px;
+                height: 28px;
+                margin: 28px 0px 28px 0px;
+            }
+        }
+    }
+    @media (min-width: #{$MQPC_1}) and (max-width: #{$MQPC_2 - 1px}) {
+        .social {
+            li {
+                width: 36px;
+                height: 36px;
+                margin: 28px 0px 28px 0px;
+            }
+        }
     }
     @media (min-width: #{$MQPC_4}) and (max-width: #{$MQPC_5 - 1px}) {
-
+        .social {
+            li {
+                width: 58px;
+                height: 58px;
+                margin: 28px 0px 28px 0px;
+            }
+        }
     }
-    @media (min-width: #{$MQPC_5}) and (max-width: #{$MQPC_6}) {
-
+    @media (min-width: #{$MQPC_5}) and (max-width: #{$MQPC_7}) {
+        .social {
+            li {
+                width: 64px;
+                height: 64px;
+                margin: 36px 0px 36px 0px;
+            }
+        }
     }
-    @media (min-width: #{$MQPC_7}) and (max-width: #{$MQPC_8 - 1px}) {
-
+    @media (min-width: #{$MQPC_7}) and (max-width: #{$MQPC_8}) {
+        .social {
+            li {
+                width: 70px;
+                height: 70px;
+                margin: 48px 0px 48px 0px;
+            }
+        }
     }
 }
