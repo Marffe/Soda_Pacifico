@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 /* Media Queries */
 /* Default */
+
 /* General */
 * {
   margin: 0px;
@@ -27,42 +28,43 @@
 .menu {
   position: absolute;
   width: 100vw;
-  height: 80px;
+  height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: rgb(150, 150, 150);
 }
 
 .menu .logo {
-  width: 20%;
-  padding: 16px;
-}
-
-.menu .logo img {
-  width: 64px;
-  height: 64px;
+  width: 5%;
+  background-color: rgb(63, 63, 63);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu ul {
   padding: 16px;
+  padding-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 80%;
+  width: 95%;
 }
 
 .menu ul a {
   padding: 16px;
   margin-left: 28px;
-  font-size: 24px;
   text-decoration: none;
   color: black;
 }
 
 .menu li {
+  font-size: 8px;
   list-style: none;
 }
 
@@ -84,6 +86,7 @@
   .menu ul a {
     padding: 5px 0px 0px 5px;
     font-size: 14px;
+    font-weight: bold;
   }
 }
 
@@ -105,6 +108,7 @@
   .menu ul a {
     padding: 5px 0px 0px 5px;
     font-size: 15px;
+    font-weight: bold;
   }
 }
 
@@ -126,6 +130,7 @@
   .menu ul a {
     padding: 5px 0px 0px 5px;
     font-size: 16px;
+    font-weight: bold;
   }
 }
 
@@ -147,6 +152,7 @@
   .menu ul a {
     padding: 5px 0px 0px 5px;
     font-size: 16px;
+    font-weight: bold;
   }
 }
 
@@ -161,6 +167,7 @@
   .menu ul a {
     padding: 7px;
     font-size: 22px;
+    font-weight: bold;
   }
 }
 
@@ -175,6 +182,7 @@
   .menu ul a {
     padding: 7px;
     font-size: 22px;
+    font-weight: bold;
   }
 }
 
@@ -185,16 +193,18 @@
   }
   .menu ul a {
     font-size: 28px;
+    font-weight: bold;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
   .menu .logo img {
-    width: 96px;
-    height: 96px;
+    width: 32px;
+    height: 32px;
   }
   .menu ul a {
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: bold;
   }
 }
 
@@ -205,6 +215,7 @@
   }
   .menu ul a {
     font-size: 40px;
+    font-weight: bold;
   }
 }
 
@@ -445,8 +456,8 @@
 
 @media (min-width: 1440px) and (max-width: 1599px) {
   .action_zone .social li {
-    width: 58px;
-    height: 58px;
+    width: 48px;
+    height: 48px;
     margin: 28px 0px 28px 0px;
   }
 }
